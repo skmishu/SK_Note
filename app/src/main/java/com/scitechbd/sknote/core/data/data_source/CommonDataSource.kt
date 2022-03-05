@@ -5,4 +5,5 @@ package com.scitechbd.sknote.core.data.data_source
  * and ready to use anywhere in the application
  */
 class CommonDataSource {
+
 }
