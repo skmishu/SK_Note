@@ -37,8 +37,9 @@ class NotesViewModel @Inject constructor(private val noteUseCases: NoteUseCases)
                 if (state.value.noteOrder::class == event.noteOrder::class &&
                     state.value.noteOrder.orderType == event.noteOrder.orderType
                 ) return
+                getNotes(event.noteOrder)
             }
-            is NotesEvent.DeleteNotes -> {
+            is NotesEvent.DeleteNote -> {
                 viewModelScope.launch {
                     noteUseCases.deleteNoteUC(event.note)
                     recentlyDeletedNote = event.note
