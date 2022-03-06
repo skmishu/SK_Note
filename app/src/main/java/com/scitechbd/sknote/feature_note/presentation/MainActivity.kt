@@ -6,16 +6,19 @@ import androidx.activity.compose.setContent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import dagger.hilt.android.AndroidEntryPoint
 import com.scitechbd.sknote.feature_note.presentation.add_edit_note.AddEditNoteScreen
 import com.scitechbd.sknote.feature_note.presentation.notes.NotesScreen
 import com.scitechbd.sknote.feature_note.presentation.util.Screen
 import com.scitechbd.sknote.ui.theme.CleanArchitectureNoteAppTheme
-import dagger.hilt.android.AndroidEntryPoint
 
 @ExperimentalAnimationApi
 @AndroidEntryPoint
